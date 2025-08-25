@@ -7,4 +7,4 @@ RUN npx playwright install
 EXPOSE 8000
 
 # Start server
-CMD ["npx", "playwright", "run-server", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["npx", "playwright", "run-server", "--port", "8000"]
