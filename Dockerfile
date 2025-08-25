@@ -1,4 +1,5 @@
-FROM mcr.microsoft.com/playwright:v1.34.0-jammy
+FROM mcr.microsoft.com/playwright:v1.50.0-noble
+# FROM mcr.microsoft.com/playwright:v1.34.0-jammy
 
 # Install Playwright browsers
 RUN npx playwright install
