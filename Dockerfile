@@ -1,11 +1,10 @@
-# Use official Node image for minimal Node + Playwright support
-FROM mcr.microsoft.com/playwright:node18-jammy
+FROM mcr.microsoft.com/playwright:v1.34.0-jammy
 
-# Set working directory
-WORKDIR /app
+# Install Playwright browsers
+RUN npx playwright install
 
-# Expose the port for Playwright WS server
+# Expose port
 EXPOSE 8000
 
-# Launch Playwright run-server on container start
+# Start server
 CMD ["npx", "playwright", "run-server", "--host", "0.0.0.0", "--port", "8000"]
