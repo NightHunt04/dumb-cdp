@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.54.0-noble
+FROM mcr.microsoft.com/playwright:v1.54.0-jammy
 # FROM mcr.microsoft.com/playwright:v1.34.0-jammy
 
 # Install Playwright browsers
